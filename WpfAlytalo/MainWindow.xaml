@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfAlytalo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAlytalo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnLivingRoomLights" Content="Living room lights" HorizontalAlignment="Left" Height="40" Margin="216,119,0,0" VerticalAlignment="Top" Width="108" Click="btnLivingRoomLights_Click"/>
+        <Button x:Name="btnKitchenLights" Content="Kitchen lights" HorizontalAlignment="Left" Height="40" Margin="216,164,0,0" VerticalAlignment="Top" Width="108" Click="btnKitchenLights_Click"/>
+        <Button x:Name="btnIndicator" Content="" HorizontalAlignment="Left" Height="40" Margin="329,119,0,0" VerticalAlignment="Top" Width="36"/>
+        <Button x:Name="btnIndicator2" Content="" HorizontalAlignment="Left" Height="40" Margin="329,164,0,0" VerticalAlignment="Top" Width="36"/>
+        <Slider x:Name="sliderLivingRoomLights" HorizontalAlignment="Left" Height="18" Margin="378,130,0,0" VerticalAlignment="Top" Width="100" Maximum="100" ValueChanged="sliderLivingRoomLights_ValueChanged" SmallChange="1"/>
+        <Slider x:Name="sliderKitchenLights" HorizontalAlignment="Left" Height="18" Margin="378,175,0,0" VerticalAlignment="Top" Width="100" Maximum="100" ValueChanged="sliderKitchenLights_ValueChanged"/>
+        <TextBox x:Name="txtSliderValue" HorizontalAlignment="Left" Height="29" Margin="489,130,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="txtSliderValue2" HorizontalAlignment="Left" Height="28" Margin="489,170,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="42"/>
+        <TextBox x:Name="txtCurrentTemperature" HorizontalAlignment="Left" Height="34" Margin="39,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" TextAlignment="Center"/>
+        <TextBox x:Name="txtTargetTemperature" HorizontalAlignment="Left" Height="34" Margin="156,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" TextAlignment="Center"/>
+        <Button x:Name="btnSetTemperature" Content="Set temp" HorizontalAlignment="Left" Height="34" Margin="92,313,0,0" VerticalAlignment="Top" Width="59" Click="btnSetTemperature_Click"/>
+        <Label x:Name="lblCurrentTemp" Content="Current temp" HorizontalAlignment="Left" Height="26" Margin="26,282,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label x:Name="lblTargetTemp" Content="Target temp" HorizontalAlignment="Left" Height="26" Margin="138,282,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnStartSauna" Content="Start sauna" HorizontalAlignment="Left" Height="40" Margin="459,322,0,0" VerticalAlignment="Top" Width="117" Click="btnStartSauna_Click"/>
+        <Button x:Name="btnStopSauna" Content="Stop sauna" HorizontalAlignment="Left" Height="40" Margin="581,322,0,0" VerticalAlignment="Top" Width="117" Click="btnStopSauna_Click"/>
+        <TextBox x:Name="txtSaunaStatus" HorizontalAlignment="Left" Height="35" Margin="459,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" FontWeight="Bold" FontSize="14" TextAlignment="Center"/>
+        <TextBox x:Name="txtTemperature" HorizontalAlignment="Left" Height="35" Margin="581,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" FontSize="14" FontWeight="Bold" TextAlignment="Center"/>
+        <Label x:Name="lblAlytalo" Content="ÄLYTALO" HorizontalAlignment="Left" Height="35" Margin="344,23,0,0" VerticalAlignment="Top" Width="84" FontSize="18"/>
+
+    </Grid>
+</Window>
